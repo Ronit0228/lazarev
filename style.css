@@ -1,0 +1,190 @@
+@font-face {
+    font-family: neue1;
+    src: url(./font/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: neue2;
+    src: url(./font/NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: neue3;
+    src: url(./font/NeueHaasDisplayRoman.ttf);
+}
+@font-face {
+    font-family: neue4;
+    src: url(./font/NeueHaasDisplayBlack.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    padding: 2rem 6rem;
+    cursor: pointer;
+    justify-content: space-between;
+    height: 13vh;
+    background-color: #111111;
+    z-index: 10;
+}
+nav>h1{
+    font-family: neue4;
+}
+.nav-elems{
+    display: flex;
+    align-items: flex-start;
+    font-family: neue1;
+    gap: 2rem;
+    padding: .9vh 0;
+    position: relative;
+    z-index: 10;
+}
+.nav-elems h4{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 2.6rem;
+}
+.nav-elems h5{
+    margin-bottom: .9rem;
+    display: none;
+    overflow: hidden;
+}
+.nav-elems h5 span{
+    font-size: .9rem;
+    display: inline-block;
+    transform: translateY(25px);
+    
+}
+.nav-elems h4:hover, .nav-elems span:hover{
+    color: #494949;
+}
+.nav-bottom{
+    width: 89%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 9;
+    background-color: #111111;
+    border-bottom: 1px solid #dadada;
+}
+
+nav button{
+    display: flex;
+    align-items: center;
+    padding: .7rem 1rem;
+    background-color: #0DA34E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+nav button svg{
+    height: 20px;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home h1{
+    font-family: neue4;
+    font-size: 9rem;
+    line-height: 8rem;
+}
+.home h1:nth-child(1) {
+    margin-top: 8rem;
+}
+.home h1 svg{
+    height: 6rem;
+    width: 6rem;
+    background-color: #0DA34E;
+    border-radius: 50%;
+    scale: 1;
+}
+.home .pen{
+    cursor: pointer;
+}
+.partner{
+    font-family: neue2;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.partner span{    
+    font-weight: 600;
+    border: 1px solid #666;
+    padding: .5rem .9rem;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 3rem;
+}
+.slider{
+    /* background-color: #0DA34E; */
+    position: absolute;
+    bottom: -10%;
+    margin-top: 10vh;
+    width: 50%;
+    white-space: nowrap;
+    padding: 1rem;
+    overflow: hidden;
+}
+.slider .moving{
+    display: inline-block;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slider .moving img{
+    height: 1.5rem;
+    margin: 0 1rem;
+}
+.blur-left{
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(transparent, #111111, transparent);
+}
+.blur-right{
+    height: 100%;
+    width: 15%;
+    top: 0;
+    right: 0;  
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(transparent, #111111, transparent);
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.product{
+    /* margin-top: 5rem; */
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+}
