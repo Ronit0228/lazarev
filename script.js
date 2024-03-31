@@ -3,7 +3,7 @@ function locomotiveScroll(){
         const locomotiveScroll = new LocomotiveScroll();
     })();
 }
-// locomotiveScroll();
+locomotiveScroll();
 
 function navAnimation(){
     var nav = document.querySelector("nav")
@@ -45,7 +45,7 @@ function navAnimation(){
     })
     })
 }
-// navAnimation();
+navAnimation();
 
 function homeh1SVG(){
     var svg = document.querySelector(".home svg")
@@ -67,7 +67,7 @@ function homeh1SVG(){
         })
     })
 }
-// homeh1SVG();
+homeh1SVG();
 
 function productAnimation(){
     var proElem = document.querySelectorAll(".product-elem")
@@ -106,7 +106,7 @@ function productAnimation(){
         })
     })
 }
-// productAnimation();
+productAnimation();
 
 function videoAnimation(){
     var videopage = document.querySelector(".video-center")
@@ -129,23 +129,25 @@ function videoAnimation(){
         })
     })
 }
-// videoAnimation();
+videoAnimation();
 
-function videohoverAnimation(){
-    var sections = document.querySelectorAll(".sec-right")
+function videohoverAnimationopacity() {
+    var sections = document.querySelectorAll(".sec-right");
 
-    sections.forEach(function(elem){
+    sections.forEach(function(elem) {
         elem.addEventListener('mouseenter', function() {
-            elem.childNodes[3].style.opacity = 1
-            elem.childNodes[3].play()
-        })
+            elem.childNodes[5].style.opacity = 1;
+            elem.childNodes[5].play(); 
+        });
+
         elem.addEventListener('mouseleave', function() {
-            elem.childNodes[3].style.opacity = 0
-            elem.childNodes[3].load()
-        })
-    })
+            elem.childNodes[5].style.opacity = 0;
+            elem.childNodes[5].pause();
+            elem.childNodes[5].currentTime = 0;
+        });
+    });
 }
-// videohoverAnimation();
+videohoverAnimationopacity();
 
 function videohoverAnimationCircle(){
     var secRight = document.querySelectorAll(".sec-right")
@@ -178,7 +180,7 @@ function videohoverAnimationCircle(){
         })
     })
 }
-// videohoverAnimationCircle();
+videohoverAnimationCircle();
 
 function videohoverAnimation2(){
     var textImg = document.querySelectorAll(".text-img")
@@ -194,7 +196,8 @@ function videohoverAnimation2(){
         })
     })
 }
-// videohoverAnimation2();
+videohoverAnimation2();
+
 function moverightSide(){
     gsap.from(".product-strategy h4",{
         x:0,
@@ -208,7 +211,7 @@ function moverightSide(){
         }
     })
 }
-// moverightSide();
+moverightSide();
 
 function pageLoader(){
     var timeLine3 = gsap.timeline()
@@ -234,6 +237,38 @@ function pageLoader(){
     })
 }
 pageLoader();
- 
+
+function inmindHover(){
+    var inmind = document.querySelectorAll(".inmind")
+
+    inmind.forEach(function(elem){
+        elem.addEventListener("mouseenter", function(){
+            gsap.to(
+                this.querySelector(".bookcall"),{
+                opacity: 1,
+                scale:  1
+            })
+        })
+        elem.addEventListener("mouseleave", function(){
+            gsap.to(
+                this.querySelector(".bookcall"), {
+                opacity: 0,
+                scale:  0
+            })
+        })
+        elem.addEventListener("mousemove", function(dets){
+            var viewCir = this.querySelector(".bookcall");
+            var rect = this.getBoundingClientRect();
+            var mouseX = dets.clientX - rect.left;
+            var mouseY = dets.clientY - rect.top;
+    
+            gsap.to(viewCir, {
+                x: mouseX - (viewCir.offsetWidth / 2),
+                y: mouseY - (viewCir.offsetHeight / 2)
+            });
+        })
+    })
+}
+inmindHover();
 
     

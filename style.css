@@ -477,6 +477,7 @@ nav button svg{
     opacity: 0;
     transition: opacity ease 0.3s;
     scale: 0;
+    z-index: 1;
 }
 .view-cir h4{
     font-family: neue2;
@@ -931,4 +932,238 @@ summary svg{
     height: 100vh;
     width: 100%;
     background-color: #000;
+}
+.aboutaidesign{
+    width: 100%;
+    background-color: #111111;
+    padding: 7rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+.testimonial{
+    width: 50%;
+    position: sticky;
+    top: 15%;
+}
+.testimonial h4{
+    font-size: 1rem;
+    font-family: neue3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.testimonial h2{
+    font-size: 3rem;
+    font-family: neue3;
+    width: 80%;
+    margin-top: 4rem;
+}
+.testimonial p{
+    font-size: .9rem;
+    font-family: neue3;
+    width: 50%;
+    margin-top: 4rem;
+} 
+.testimonial-sum{
+    width: 50%;
+    height: 100%;
+} 
+.testimonial-sum h4{
+    font-family: neue3;
+    font-size: .9rem;
+}
+.testimonial-sum p{
+    font-size: 1.5rem;
+    font-family: neue3;
+    margin-top: 2rem;
+}
+.testimonial1{
+    height: 100%;
+    border-top: 1px solid #eee;
+    padding: 4rem 0;
+}
+
+.testimonial2{
+    height: 100%;
+    border-top: 1px solid #eee;
+    padding: 4rem 0;
+}
+.test-author{
+    display: flex;
+    margin-top: 5rem;
+    gap: 2rem;
+    font-family: neue3;
+    align-items: center;
+    line-height: 2;
+}
+.test-author img{
+    height: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.inmind{
+    height: 80vh;
+    width: 100%;
+    background-color: #111111;
+    z-index: 4;
+    position: relative;
+    border-top: 1px solid #333;
+    padding: 5rem;
+    cursor: pointer;
+}
+.bookcall{
+    width: 10rem;
+    height: 10rem;
+    background-color: #0DA34E;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity ease 0.3s;
+    scale: 0;
+}
+.bookcall h4{
+    font-family: neue2;
+    margin: 6rem 1rem;
+}
+.bookcall svg{
+    height: 1rem;
+    position: absolute;
+    margin: 2rem 0 0 6rem;
+}
+.inmind>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+}
+.inmind>p{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    right: 5%;
+    bottom: 5%;
+    font-size: 1.2rem;
+    font-family: neue3;
+    text-align: right;
+    line-height:  1.5;
+}
+.projectinmind{
+    width: 60%;
+}
+.projectinmind h2{
+    font-size: 9rem;
+    z-index: 1;
+    font-family: neue6;
+    text-transform: uppercase;
+    position: relative;
+}
+.projectinmind img{
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    float: left;
+    margin: 2rem 2rem 0 0;
+}
+.founder{
+    background-color: #111111;
+    width: 100%;
+    padding: 5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+.about-founder{
+    width: 50%;
+}
+.name-founder{
+    text-align: center;
+    line-height: 2rem;
+}
+.name-founder h4{
+    font-family: neue3;
+    font-size: 1.3rem;
+}
+.name-founder h5{
+    font-family: neue3;
+    font-size: 1rem;
+}
+.embrance{
+    margin-top: 5rem;
+    text-align: center;
+}
+.embrance h3{
+    font-family: neue3;
+    font-size: 3rem;
+} 
+.sumfromfounder{
+    display: flex;
+    margin-top: 10rem;
+    justify-content: space-between;
+}
+.sumfromfounder p{
+    font-family: neue3;
+    font-size: 1.2rem;
+}
+.sumfromfounderl{
+    width: 45%;
+}
+.sumfromfounderr{
+    width: 45%;
+}
+.founderimg{
+    width: 35%;
+    height: 85vh;
+}
+.founderimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background-color: #111111;
+    width: 100%;
+    padding: 5rem;
+}
+.location{
+    border-top: 1px solid #333;
+    padding: 5rem 0 5rem 0;
+}
+.location h5{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: neue3;
+}
+.location h3{
+    font-size: 2.5rem;
+    font-family: neue3;
+    margin-top: 2rem;
+}
+.things{
+    width: 30%;
+    margin-top: 2rem;
+}
+.things a{
+    text-decoration: none;
+    font-family: neue3;
+    font-size: 1rem;
+    display:flex;
+    line-height: 2rem;
+}
+.things a:hover{
+    color: #4F5BFF;
+}
+.copyright{
+    border-top: 1px solid #333;
+    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright h5{
+    font-size: 1rem;
+    font-family: neue5;
+    letter-spacing: 1px;
 }
