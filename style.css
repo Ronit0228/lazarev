@@ -498,7 +498,6 @@ nav button svg{
     width: 25%;
 }
 .platform-right{
-    /* height: 90vh; */
     width: 70%;
     display: flex;
     padding: 1rem;
@@ -513,7 +512,7 @@ nav button svg{
 .platform-right p{
     font-size: 1.3rem;
     color: #000;
-    font-weight: 500;
+    width: 25rem;
 }
 .platform-right img{
     height: 300px;
